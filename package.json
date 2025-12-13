@@ -1,0 +1,52 @@
+{
+  "name": "@qwickapps/auth0-management-client",
+  "version": "1.0.0",
+  "description": "Auth0 Management API client for QwickApps - shared between CLI and server",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "auth0",
+    "management",
+    "api",
+    "client",
+    "qwickapps"
+  ],
+  "author": "QwickApps <legal@qwickapps.com>",
+  "license": "PolyForm-Shield-1.0.0",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qwickapps/auth0-management-client.git"
+  },
+  "homepage": "https://github.com/qwickapps/auth0-management-client#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
